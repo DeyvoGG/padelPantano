@@ -60,3 +60,14 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+# Descripción y estructura
+Este proyecto está hecho con la intencion de dar a conocer el negocio local de un club de pádel a más personas, así como facilitar el uso de instalaciones, reserva de pistas y adquisición de productos a los usuarios del mismo.
+
+-Tendrá un login en el que podrá iniciar sesión o registrarse con google.
+
+-Tienda donde se muestran los productos del club
+
+-Home con información del club imágenes y entrenamientos.
+
+-Un perfil personal y público en el dispondrás de tu información personal y nivel de juego.

@@ -1,0 +1,22 @@
+.padel-footer {
+  background-color: #0d47a1; // Mismo color que el navbar
+  border-top: none; // Quitamos el border-top gris de Bootstrap
+  color: white;
+
+  // Opcional: redondear esquinas inferiores si quieres estilo moderno
+  // border-radius: 0 0 12px 12px;
+
+  a {
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.2s;
+
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  .opacity-75 {
+    opacity: 0.75;
+  }
+}

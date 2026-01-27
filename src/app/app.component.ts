@@ -7,10 +7,11 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { LoginComponent } from './components/auth/login/login.component';
 import { PistasComponent } from './components/pistas/pistas.component';
 import { SiginComponent } from './components/auth/sigin/sigin.component';
+import { TiendaComponent } from './components/tienda/tienda.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,RouterLink,NavbarComponent,FooterComponent,HomeComponent,ProfileComponent,LoginComponent,PistasComponent,SiginComponent],
+  imports: [RouterOutlet,RouterLink,NavbarComponent,FooterComponent,HomeComponent,ProfileComponent,LoginComponent,PistasComponent,SiginComponent,TiendaComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

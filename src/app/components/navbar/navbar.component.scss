@@ -1,9 +1,6 @@
 .padel-navbar {
-  background-color: #0d47a1; // Azul oscuro tipo pista de pádel
-  // Puedes ajustar este color. Algunas opciones:
-  // #1976d2 (azul material)
-  // #0d47a1 (azul más oscuro)
-  // #2196f3 (azul brillante)
+  background-color: #0d47a1; 
+ 
 
   .navbar-brand,
   .nav-link,
@@ -15,7 +12,10 @@
     font-weight: bold;
     font-size: 1.5rem;
   }
-
+.navbar-brand img {
+  max-width: 100%;
+  height: auto;
+}
   .nav-link:hover,
   .nav-link.active {
     color: #bbdefb !important; // Un azul claro para hover/activo

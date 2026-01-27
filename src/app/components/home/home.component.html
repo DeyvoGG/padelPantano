@@ -1,3 +1,48 @@
+<!-- ENVUELVE EL CARRUSEL EN UN CONTAINER + AJUSTA PROPORCIÓN -->
+<div class="container px-4 py-4"> <!-- Contiene el ancho como otras secciones -->
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="ratio ratio-21x9"> <!-- ¡CAMBIO CLAVE: Proporción banner profesional -->
+          <img src="assets/images/carrousel4.avif" 
+               class="d-block w-100 h-100 rounded-3" 
+               alt="Pistas de pádel al atardecer"
+               style="object-fit: cover; object-position: center;">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="ratio ratio-21x9">
+          <img src="assets/images/carrousel2.avif" 
+               class="d-block w-100 h-100 rounded-3" 
+               alt="Jugadores en acción"
+               style="object-fit: cover; object-position: center;">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="ratio ratio-21x9">
+          <img src="assets/images/carrousel3.jpg" 
+               class="d-block w-100 h-100 rounded-3" 
+               alt="Instalaciones del club"
+               style="object-fit: cover; object-position: center;">
+        </div>
+      </div>
+    </div>
+    <!-- Controles (sin cambios) -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
 <!-- Hero section -->
 <div class="container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">

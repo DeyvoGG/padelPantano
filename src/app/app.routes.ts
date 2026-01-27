@@ -13,7 +13,7 @@ export const routes: Routes = [
     {path:'pistas',component:PistasComponent},
     {path:'sigin',component:SiginComponent},
     {path:'tienda',component:TiendaComponent},
-    {path:'', redirectTo:'home', pathMatch:'full'},
-    {path:'**', redirectTo:'home', pathMatch:'full'}
+    {path:'', redirectTo:'/home', pathMatch:'full'},
+    {path:'**', redirectTo:'/home', pathMatch:'full'}
 ]
 ;

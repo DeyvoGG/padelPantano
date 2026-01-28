@@ -1,14 +1,88 @@
 <div class="container my-4">
+  <!-- Sección de Palas -->
   <section class="mb-5">
     <h2 class="text-success mb-4">Las palas más deseadas</h2>
     
-    <!-- Mensaje de depuración -->
     <div *ngIf="palas.length === 0" class="alert alert-warning">
       El array de palas está vacío
     </div>
 
     <div class="row row-cols-1 row-cols-md-5 g-4">
       <div class="col" *ngFor="let producto of palas">
+        <div class="card h-100 shadow-sm">
+          <div class="position-relative">
+            <img 
+              [src]="producto.imagen" 
+              class="card-img-top" 
+              alt="{{producto.nombre}}"
+              style="height: 250px; object-fit: cover;"
+            >
+            <span class="badge bg-danger position-absolute top-0 start-0 m-2">-45%</span>
+          </div>
+          <div class="card-body">
+            <h6 class="card-title fw-bold">{{producto.nombre}}</h6>
+            <p class="card-text text-muted small">{{producto.descripcion}}</p>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <span class="text-decoration-line-through text-muted small">
+                {{producto.precioAnterior}} €
+              </span>
+              <span class="h6 fw-bold text-success">
+                {{producto.precioActual}} €
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Zapatillas -->
+  <section class="mb-5">
+    <h2 class="text-primary mb-4">Últimas zapatillas</h2>
+    
+    <div *ngIf="zapatillas.length === 0" class="alert alert-warning">
+      El array de zapatillas está vacío
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-5 g-4">
+      <div class="col" *ngFor="let producto of zapatillas">
+        <div class="card h-100 shadow-sm">
+          <div class="position-relative">
+            <img 
+              [src]="producto.imagen" 
+              class="card-img-top" 
+              alt="{{producto.nombre}}"
+              style="height: 250px; object-fit: cover;"
+            >
+            <span class="badge bg-danger position-absolute top-0 start-0 m-2">-45%</span>
+          </div>
+          <div class="card-body">
+            <h6 class="card-title fw-bold">{{producto.nombre}}</h6>
+            <p class="card-text text-muted small">{{producto.descripcion}}</p>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <span class="text-decoration-line-through text-muted small">
+                {{producto.precioAnterior}} €
+              </span>
+              <span class="h6 fw-bold text-success">
+                {{producto.precioActual}} €
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Paleteros -->
+  <section class="mb-5">
+    <h2 class="text-warning mb-4">Paleteros y mochilas</h2>
+    
+    <div *ngIf="paleteros.length === 0" class="alert alert-warning">
+      El array de paleteros está vacío
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-5 g-4">
+      <div class="col" *ngFor="let producto of paleteros">
         <div class="card h-100 shadow-sm">
           <div class="position-relative">
             <img 

@@ -1,5 +1,6 @@
-<!-- ENVUELVE EL CARRUSEL EN UN CONTAINER + AJUSTA PROPORCIÓN -->
-<div class="container px-4 py-4"> <!-- Contiene el ancho como otras secciones -->
+
+<div class="container px-4 py-4"> 
+  <!-- Carousel - Ya es responsivo por defecto -->
   <div id="carouselExampleIndicators" class="carousel slide">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -8,7 +9,7 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <div class="ratio ratio-21x9"> <!-- ¡CAMBIO CLAVE: Proporción banner profesional -->
+        <div class="ratio ratio-21x9"> 
           <img src="assets/images/carrousel4.avif" 
                class="d-block w-100 h-100 rounded-3" 
                alt="Pistas de pádel al atardecer"
@@ -32,7 +33,7 @@
         </div>
       </div>
     </div>
-    <!-- Controles (sin cambios) -->
+    <!-- Controles del carousel -->
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
@@ -43,129 +44,166 @@
     </button>
   </div>
 </div>
-<!-- Hero section -->
+
+
 <div class="container col-xxl-8 px-4 py-5">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-10 col-sm-8 col-lg-6">
-            <img src="assets/images/pista.jpg" class="d-block mx-lg-auto img-fluid rounded" alt="pista-padel"
-                width="700" height="500" loading="lazy">
-        </div>
-        <div class="col-lg-6">
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Tu club de pádel favorito</h1>
-            <p class="lead">En Pádel Pantano, disfruta de la mejor experiencia de pádel en un entorno natural y moderno.
-                Juega en nuestras pistas de calidad y disfruta de un entorno único. Todo lo que necesitas para jugar al
-                pádel lo encuentras aquí.
-                Contáctanos sin compromisos o échale un vistazo a nuestra web.</p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">WhatsApp</button>
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Registrate</button>
-            </div>
-        </div>
+  <!-- ROW: Contenedor de grid que organiza los elementos en fila -->
+  <!-- flex-lg-row-reverse: En pantallas grandes, invierte el orden (imagen a la derecha) -->
+  <!-- align-items-center: Centra verticalmente los elementos -->
+  <!-- g-5: Gap (espacio) de 3rem entre columnas -->
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    
+    <!-- COL: Columna para la imagen -->
+    <!-- col-10: En móvil ocupa 10 de 12 columnas -->
+    <!-- col-sm-8: En tablets ocupa 8 de 12 columnas -->
+    <!-- col-lg-6: En desktop ocupa 6 de 12 columnas (50%) -->
+    <div class="col-10 col-sm-8 col-lg-6">
+      <img src="assets/images/pista.jpg" 
+           class="d-block mx-lg-auto img-fluid rounded" 
+           alt="pista-padel"
+           width="700" height="500" loading="lazy">
     </div>
+    
+    <!-- COL: Columna para el texto -->
+    <!-- col-lg-6: En desktop ocupa 6 de 12 columnas (50%) -->
+    <!-- En móvil ocupa el 100% por defecto -->
+    <div class="col-lg-6">
+      <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Tu club de pádel favorito</h1>
+      <p class="lead">En Pádel Pantano, disfruta de la mejor experiencia de pádel en un entorno natural y moderno.
+        Juega en nuestras pistas de calidad y disfruta de un entorno único. Todo lo que necesitas para jugar al
+        pádel lo encuentras aquí.
+        Contáctanos sin compromisos o échale un vistazo a nuestra web.</p>
+      
+      <!-- Botones responsivos -->
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">WhatsApp</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Registrate</button>
+      </div>
+    </div>
+  </div>
 </div>
 
-<!-- Cards con imagen de fondo -->
+
 <div class="container px-4 py-5" id="custom-cards">
-    <h2 class="pb-2 border-bottom">¿Qué encontrarás en Pádel Pantano?</h2>
-    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-
-        <!-- Card 1: Club Pantano -->
-        <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                style="background-image: url('/assets/images/clubPantano.jpg');">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Pistas homologadas y en perfecto estado con
-                        mantenimiento diario</h3>
-                    <ul class="d-flex list-unstyled mt-auto">
-                        <li class="me-auto">
-                            <img src="assets/images/club.jpg" alt="Club" width="32" height="32"
-                                class="rounded-circle border border-white">
-                        </li>
-                        <li class="d-flex align-items-center me-3">
-                            <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
-                                <use xlink:href="#geo-fill"></use>
-                            </svg>
-                            <small>Morón de la Frontera</small>
-                        </li>
-                        <li class="d-flex align-items-center">
-                            <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
-                                <use xlink:href="#calendar3"></use>
-                            </svg>
-                            <small>3d</small>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+  <h2 class="pb-2 border-bottom">¿Qué encontrarás en Pádel Pantano?</h2>
+  
+  <!-- ROW: Contenedor de grid para las cards -->
+  <!-- row-cols-1: En móvil, 1 columna (cards apiladas verticalmente) -->
+  <!-- row-cols-lg-3: En desktop, 3 columnas (cards en fila) -->
+  <!-- align-items-stretch: Todas las cards tienen la misma altura -->
+  <!-- g-4: Gap de 1.5rem entre cards -->
+  <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+    
+    <!-- COL: Cada card ocupa 1 columna del grid -->
+    <!-- En móvil: 100% del ancho -->
+    <!-- En desktop: 33.33% del ancho (3 cards por fila) -->
+    <div class="col">
+      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+          style="background-image: url('/assets/images/clubPantano.jpg');">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Pistas homologadas y en perfecto estado con
+              mantenimiento diario</h3>
+          <ul class="d-flex list-unstyled mt-auto">
+            <li class="me-auto">
+              <img src="assets/images/club.jpg" alt="Club" width="32" height="32"
+                  class="rounded-circle border border-white">
+            </li>
+            <li class="d-flex align-items-center me-3">
+              <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
+                <use xlink:href="#geo-fill"></use>
+              </svg>
+              <small>Morón de la Frontera</small>
+            </li>
+            <li class="d-flex align-items-center">
+              <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
+                <use xlink:href="#calendar3"></use>
+              </svg>
+              <small>3d</small>
+            </li>
+          </ul>
         </div>
-
-        <!-- Card 2: Entrenamientos -->
-        <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                style="background-image: url('/assets/images/entrenador.jpg');">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Entrenamientos personalizados con profesionales
-                    </h3>
-                    <ul class="d-flex list-unstyled mt-auto">
-                        <li class="me-auto">
-                            <img src="assets/images/pista.jpg" alt="Entreno" width="32" height="32"
-                                class="rounded-circle border border-white">
-                        </li>
-                        <li class="d-flex align-items-center me-3">
-                            <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
-                                <use xlink:href="#geo-fill"></use>
-                            </svg>
-                            <small>Morón de la Frontera</small>
-                        </li>
-                        <li class="d-flex align-items-center">
-                            <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
-                                <use xlink:href="#calendar3"></use>
-                            </svg>
-                            <small>4d</small>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Card 3: Pádel Lovers -->
-        <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                style="background-image: url('/assets/images/padelLovers.jpg');">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Comunidad de amantes del pádel en un entorno único
-                    </h3>
-                    <ul class="d-flex list-unstyled mt-auto">
-                        <li class="me-auto">
-                            <img src="assets/images/pista.jpg" alt="Pádel Lovers" width="32" height="32"
-                                class="rounded-circle border border-white">
-                        </li>
-                        <li class="d-flex align-items-center me-3">
-                            <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
-                                <use xlink:href="#geo-fill"></use>
-                            </svg>
-                            <small>Morón de la Frontera</small>
-                        </li>
-                        <li class="d-flex align-items-center">
-                            <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
-                                <use xlink:href="#calendar3"></use>
-                            </svg>
-                            <small>5d</small>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
+      </div>
     </div>
+
+    <!-- Card 2: Entrenamientos -->
+    <div class="col">
+      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+          style="background-image: url('/assets/images/entrenador.jpg');">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Entrenamientos personalizados con profesionales
+          </h3>
+          <ul class="d-flex list-unstyled mt-auto">
+            <li class="me-auto">
+              <img src="assets/images/pista.jpg" alt="Entreno" width="32" height="32"
+                  class="rounded-circle border border-white">
+            </li>
+            <li class="d-flex align-items-center me-3">
+              <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
+                <use xlink:href="#geo-fill"></use>
+              </svg>
+              <small>Morón de la Frontera</small>
+            </li>
+            <li class="d-flex align-items-center">
+              <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
+                <use xlink:href="#calendar3"></use>
+              </svg>
+              <small>4d</small>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3: Pádel Lovers -->
+    <div class="col">
+      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+          style="background-image: url('/assets/images/padelLovers.jpg');">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Comunidad de amantes del pádel en un entorno único
+          </h3>
+          <ul class="d-flex list-unstyled mt-auto">
+            <li class="me-auto">
+              <img src="assets/images/pista.jpg" alt="Pádel Lovers" width="32" height="32"
+                  class="rounded-circle border border-white">
+            </li>
+            <li class="d-flex align-items-center me-3">
+              <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
+                <use xlink:href="#geo-fill"></use>
+              </svg>
+              <small>Morón de la Frontera</small>
+            </li>
+            <li class="d-flex align-items-center">
+              <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
+                <use xlink:href="#calendar3"></use>
+              </svg>
+              <small>5d</small>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<!-- Call to action section -->
-<div class="px-4 py-5 my-5 text-center"> <img class="d-block mx-auto mb-4"
-        src="assets/images/logo.png" alt="" width="72" height="57">
-    <h1 class="display-5 fw-bold text-body-emphasis">Entrena con nosotros</h1>
-    <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">Si quieres mejorar tu juego de pádel, ¡estás en el lugar correcto!, contacta con nosotros y comienza a entrenar. Mejorar tu juego nunca ha sido tan fácil</p>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"> <button type="button"
-                class="btn btn-primary btn-lg px-4 gap-3">Registrate aquí</button> <button type="button"
-                class="btn btn-outline-secondary btn-lg px-4">Contacta por teléfono</button> </div>
+
+
+<div class="px-4 py-5 my-5 text-center">
+  <!-- Imagen centrada -->
+  <img class="d-block mx-auto mb-4" src="assets/images/logo.png" alt="Logo" width="72" height="57">
+  
+  <h1 class="display-5 fw-bold text-body-emphasis">Entrena con nosotros</h1>
+  
+  <!-- Contenedor para el texto y botones -->
+  <!-- col-lg-6: En pc ocupa 6 de 12 columnas (50%) -->
+  <!-- mx-auto: Centra horizontalmente en todas las pantallas -->
+  <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4">Si quieres mejorar tu juego de pádel, ¡estás en el lugar correcto!, contacta con nosotros y comienza a entrenar. Mejorar tu juego nunca ha sido tan fácil</p>
+    
+    <!-- Botones responsivos -->
+    <!-- d-grid: En móvil, botones en columna -->
+    <!-- d-sm-flex: En tablets+, botones en fila -->
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Registrate aquí</button>
+      <button type="button" class="btn btn-outline-secondary btn-lg px-4">Contacta por teléfono</button>
     </div>
+  </div>
 </div>
